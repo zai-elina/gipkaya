@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gramophone</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+        <nav class="menu" id="navbar">
+          <ul>
+            <li class="menu-item">
+              <a href="#about">О сайте</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contact">Контакты</a>
+            </li>
+            <li class="menu-item">
+              <a href="login.html">Войти</a>
+            </li>
+            <li class="menu-item">
+              <a href="registration.html">Регистрация</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div
+        id="carousel"
+        class="carousel slide carousel-fade d-inline-block"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid" src="images/hero1.jpg" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="images/hero2.jpg" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="images/hero3.jpg" alt="..." />
+          </div>
+        </div>
+
+        <a
+          class="carousel-control-prev"
+          href="#carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущий</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующий</span>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="listen">
+          <div class="listen-text-bt">
+            <div class="listen-title">Слушай музыку прямо сейчас</div>
+            <a href="registration.html"
+              ><button class="regist-button">Зарегистрироваться</button></a
+            >
+          </div>
+          <div class="sound-img">
+            <img src="images/sound-waves 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-title">О сайте</div>
+        <p class="about-text">
+          Пользователи нашего сервиса могут прослушивать музыку, создавать
+          плейлисты и обмениваться ими. Для музыкантов предоставляется
+          возможность загрузки музыки, а также составления из отдельных
+          композиций альбомов. Также вы можете давать рекомендации по интересам
+          пользователей и автоматически генерировать плейлисты похожей музыки.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-title">Контакты</div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <a href=""
+              ><div class="circle">
+                <div class="img-contact">
+                  <img src="images/contact/instagram.png" alt="" />
+                </div></div
+            ></a>
+          </div>
+          <div class="contact-item">
+            <a href=""
+              ><div class="circle">
+                <div class="img-contact">
+                  <img src="images/contact/telegram (1).png" alt="" />
+                </div></div
+            ></a>
+          </div>
+          <div class="contact-item">
+            <a href=""
+              ><div class="circle">
+                <div class="img-contact">
+                  <img src="images/contact/twitter 1.png" alt="" />
+                </div></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-text">ⒸРазработан ВИБЭР, 2022</div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

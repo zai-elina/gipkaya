@@ -17,6 +17,14 @@ body{
     font-family: 'Playfair Display', serif;
 }
 
+*{
+    box-sizing: border-box; 
+}
+
+h2{
+   font-size: 55px;
+}
+
 #about:before {
 	display: block;
 	content: "";
@@ -33,9 +41,9 @@ body{
     top: 0;
 }
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:0px;
+    width:100%;
+    max-width: 1184px;
+    margin:0 auto;
 }
 .header .container{
     display: flex;
@@ -77,7 +85,6 @@ body{
     height:758px;
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: flex-start;
 }
 .listen-title{
@@ -85,15 +92,13 @@ body{
     width: 688px;
     margin-top:241px;
     font-weight: 400;
-    font-size: 80px;
-    line-height: 80px;
     color: #FF1616;
     letter-spacing: 0.06em;
 }
 
-.sound-img{
-    width:505px;
-    height:432px;
+.sound-img img{
+    width: 418px;
+    height: 432px;
     margin-top:186px;
 }
 
@@ -117,8 +122,6 @@ button:hover {
 
 .about-title{
     font-weight: 400;
-    font-size: 80px;
-    line-height: 80px;
     color: #FF1616;
     text-align: center;
     overflow: hidden;
@@ -146,18 +149,18 @@ button:hover {
 }
 
 .about-text{
-    margin-top:15px;
+    margin-top:50px;
     height: 490px;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 70px;
+    font-size: 30px;
+    line-height: 50px;
     color: #000000;
     text-align: center;
     letter-spacing: 0.2em;
 }
 
 .contact{
-    margin-top:118px;
+    margin-top:20px;
     background: url(../images/background-contact.png);
     background-size: cover;
     width: 100%;
@@ -166,8 +169,6 @@ button:hover {
 
 .contact-title{
     font-weight: 400;
-    font-size: 60px;
-    line-height: 80px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     text-align: left;
@@ -196,38 +197,23 @@ button:hover {
 }
 
 
-.footer{
-    background:#000000;
-    width:100%;
-    height: 80px;
-}
 
-.footer-text{
-    padding-top:5px ;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 70px;  
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-}
 .regist{
     width: 100%;
-    height: 483px; 
+    height: 400px; 
 }
 .regist-choice{
-    width: 1165px;
-    height: 336px;
+    width: 70%;
     background: #FF6B00;
     border-radius: 100px;
     margin:0 auto;
-    margin-top:150px;
+    margin-top:250px;
 }
 
 .reg-title{
     font-weight: 900;
-    font-size: 45px;
-    line-height: 70px;
     letter-spacing: 0.05em;
+    font-size:30px;
     color: #FFFFFF;
     text-align:center;
     padding-top:26px;
@@ -245,26 +231,23 @@ button:hover {
     background: #FFDEAD;
     border: 3px solid #8B4513;
     border-radius: 48px;
-    width: 482px;
-    height: 99px;
+    width: 40%;
+    margin-bottom: 20px;
 }
-
-
 
 .choice-elem a{
     text-decoration: none;
     font-family: 'Play-Bold';
     font-weight: 700;
-    font-size: 45px;
-    line-height: 70px;
+    font-size: 24px;
     letter-spacing: 0.05em;
     color: #000000;
 }
 
 
 .reg-actor{
-    width: 749px;
-    height: 570px;
+    width: 65%;
+    height: 500px;
     background: #FF6B00;
     border-radius: 100px;
     margin:0 auto;
@@ -273,6 +256,7 @@ button:hover {
 
 .reg-actor .reg-title{
     font-size:25px;
+    margin-bottom: 10px;
 }
 
 .reg-actor-wrap{
@@ -318,10 +302,10 @@ input{
 
 .registerbtn .title-reg{
     font-family: 'Play-Bold';
-font-weight: 700;
-font-size: 20px;
-letter-spacing: 0.05em;
-color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 .form-item{
@@ -388,8 +372,7 @@ color: #000000;
 .footer-text{
     padding-top:5px ;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 70px;  
+    font-size: 15px;  
     letter-spacing: 0.05em;
     color: #FFFFFF;
 }
@@ -408,4 +391,17 @@ color: #000000;
 		transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
+}
+@media screen and (max-width:1199px){
+    .sound-img{
+        display:none;
+    }
+    .about-text{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    h2{
+        font-size:45px;
+    }
+
 }

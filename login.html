@@ -38,11 +38,17 @@
         <form action="">
             <div class="form-item">
                 <label for="login"><b>Логин</b></label>
-                <input type="text" name="name" />
+                <div class="input-and-er">
+                  <input type="text" name="name" />
+                  <div class="error">ошибка</div>
+                </div>
               </div>
               <div class="form-item">
                 <label for="psw"><b>Пароль</b></label>
-                <input type="password" name="psw" />
+                <div class="input-and-er">
+                  <input type="password" name="psw" />
+                  <div class="error">ошибка</div>
+                </div>
               </div>
               <button type="submit" class="registerbtn">
                 <div class="title-reg">Войти</div>

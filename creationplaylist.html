@@ -34,14 +34,16 @@
 
     <div class="player-nav">
       <div class="player-menu">
-        <div class="searching">
-          <input
-            type="search"
-            placeholder="Трек, альбом, исполнитель"
-            class="search-field"
-          />
-          <img src="images/search.png" alt="" class="search-icon" />
-        </div>
+        <form action="" class="search">
+          <div class="searching">
+            <input
+              type="search"
+              placeholder="Sting"
+              class="search-field"
+            />
+            <button><img src="images/search.png" alt="" class="search-icon" /></button>
+          </div>
+        </form>
 
         <div class="btn-menu">
           <a href="#">Моя музыка</a>
@@ -60,9 +62,43 @@
 
     <section class="my-playlists">
       <div class="container">
-        <div class="frame-playlists">
-            <div class="title-my">Создание нового плейлиста</div>
+        <form action="" class="create-playlist">
+          <div class="frame-playlists">
+            <div class="playlists-title">Создание нового плейлиста</div>
+            <hr />
+            <div class="desc-creation-playlist">
+              <label class="label-cover">
+                <i class="cover-icons"
+                  ><img
+                    class="add-playlist"
+                    src="images/my-playlists/image 47.png"
+                    alt=""
+                /></i>
+                <span class="title-cover">Добавить обложку</span>
+                <input type="file" />
+              </label>
+              <div class="text-input">
+                <label for="name-playlist">
+                  <input type="text" placeholder="Название плейлиста" />
+                </label>
+                <label for="desc-playlist">
+                    <input type="text" placeholder="Описание плейлиста" />
+                  </label>
+              </div>
+            </div>
+              <hr>
+              <select name="add-music" id="">
+                <option class="option-text">Добавить аудио</option>
+                <option class="option-text" value="from-playlist">Из плейлистов</option>
+                <option class="option-text" value="from-search">Из глобального поиска</option>
+              </select>
+            
+          
+          <button type="submit" class="createbtn">
+            <div class="createbtn-text">Создать</div>
+          </button>
         </div>
+        </form>
       </div>
     </section>
 

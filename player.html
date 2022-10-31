@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <title>Gramophone</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+      integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="libs/slick/slick.css" />
     <link rel="stylesheet" href="libs/slick/slick-theme.css" />
@@ -35,7 +49,6 @@
     </header>
 
     <div class="player-nav">
-      <div class="container">
         <div class="player-menu">
           <div class="searching">
             <input
@@ -58,7 +71,6 @@
           <div class="btn-menu">
             <a href="index.html">Главная</a>
           </div>
-        </div>
       </div>
     </div>
 
@@ -156,11 +168,10 @@
               <div class="musician">Sting</div>
             </div>
             <div class="music-desc2">
-              <div class="like"><img src="images/like.png" alt=""></div>
+              <div class="like"><img src="images/like.png" alt="" /></div>
               <div class="music-time">4:36</div>
             </div>
           </div>
-
 
           <div class="music-item">
             <div class="img">
@@ -171,11 +182,10 @@
               <div class="musician">Nirvana</div>
             </div>
             <div class="music-desc2">
-              <div class="like"><img src="images/like.png" alt=""></div>
+              <div class="like"><img src="images/like.png" alt="" /></div>
               <div class="music-time">4:17</div>
             </div>
           </div>
-
 
           <div class="music-item">
             <div class="img">
@@ -186,7 +196,7 @@
               <div class="musician">Sting</div>
             </div>
             <div class="music-desc2">
-              <div class="like"><img src="images/like.png" alt=""></div>
+              <div class="like"><img src="images/like.png" alt="" /></div>
               <div class="music-time">4:36</div>
             </div>
           </div>
@@ -202,7 +212,7 @@
         <div class="genre-slider playlist">
           <div class="slider">
             <a href=""
-              ><div class="genre-image ">
+              ><div class="genre-image">
                 <img src="images/playlists/2000.png" alt="" />
                 <div class="playlist-text">Супер-хиты: 2000 г.</div>
               </div>
@@ -212,38 +222,121 @@
             <a href=""
               ><div class="genre-image">
                 <img src="images/playlists/sleep.png" alt="" />
-                <div class="playlist-text">Для сна</div></div>
-              </a
-            >
+                <div class="playlist-text">Для сна</div>
+              </div>
+            </a>
           </div>
           <div class="slider">
             <a href=""
               ><div class="genre-image">
                 <img src="images/playlists/rus.png" alt="" />
-                <div class="playlist-text">Русские хиты</div></div>
+                <div class="playlist-text">Русские хиты</div>
+              </div>
             </a>
           </div>
           <div class="slider">
             <a href=""
               ><div class="genre-image">
                 <img src="images/playlists/sleep.png" alt="" />
-                <div class="playlist-text">Для сна</div></div></div>
-                </a>
+                <div class="playlist-text">Для сна</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="player" id="player">
+      <div class="container">
+        <div class="player-items">
+          <div class="about-music">
+            <div class="music-img">
+              <img src="images/play-now-music/faded.png" alt="" />
+            </div>
+            <div class="music-desc">
+              <div class="track-name">Название трека</div>
+              <div class="track-artist">Имя артиста</div>
+            </div>
+          </div>
+
+          <div class="like">
+            <img src="images/playlists/image 11.png" alt="" />
+          </div>
+          <div class="dislike">
+            <img src="images/playlists/image 13.png" alt="" />
+          </div>
+          <div class="add">
+            <img src="images/playlists/image 14.png" alt="" />
+          </div>
+
+          <div class="player-base">
+            <div class="buttons but-pos">
+              <div class="random-track" onclick="randomTrack()">
+                <i class="fas fa-random fa-2x" title="random"></i>
+              </div>
+              <div class="prev-track" onclick="prevTrack()">
+                <i class="fa fa-step-backward fa-2x"></i>
+              </div>
+              <div class="playpause-track" onclick="playpauseTrack()">
+                <i class="fa fa-play-circle fa-3x"></i>
+              </div>
+              <div class="next-track" onclick="nextTrack()">
+                <i class="fa fa-step-forward fa-2x"></i>
+              </div>
+              <div class="repeat-track" onclick="repeatTrack()">
+                <i class="fa fa-repeat fa-2x" title="repeat"
+                  ><img src="images/repeat.png" alt="" style="width: 35px"
+                /></i>
+              </div>
+            </div>
+            <div class="slider_container slider-pos">
+              <div class="current-time">00:00</div>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="0"
+                class="seek_slider"
+                onchange="seekTo()"
+              />
+              <div class="total-duration">00:00</div>
+            </div>
+          </div>
+
+          <div class="albom">
+            <a href=""
+              ><img
+                src="images/playlists/free-icon-playlist-2908602.png"
+                alt=""
+            /></a>
+          </div>
+
+          <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="99"
+              class="volume_slider"
+              onchange="setVolume()"
+            />
+            <i class="fa fa-volume-up"></i>
+          </div>
+        </div>
+      </div>
+      <button  id="close"><img
+        src="images/playlists/free-icon-crossed-4219073.png"
+        alt=""
+        class="close-player"
+      /></button>
+    </div>
 
     <footer class="footer">
       <div class="container">
         <div class="footer-text">ⒸРазработан ВИБЭР, 2022</div>
       </div>
     </footer>
-
-    <div class="player">
-      <div class="container">
-        
-    </div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

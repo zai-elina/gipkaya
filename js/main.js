@@ -14,7 +14,6 @@ for (var i = 0; i < btns.length; i++) {
 
 
 $(function(){
-
   $('.genre-slider').slick({
     infinite: false,
     slidesToShow: 3,
@@ -30,6 +29,19 @@ $(function(){
 const closePlayer=document.querySelector('#close');
 const windowPlayer=document.querySelector('#player');
 
-closePlayer.addEventListener('click', ()=> windowPlayer.classList.add('none-player')  );
+if(closePlayer!== null){
+  closePlayer.addEventListener('click', ()=> windowPlayer.classList.add('none-player')  );}
+
+
+$("#openmodal").on("change", function () {        
+    if($(this).val() === 'openmodaloption1'){
+       $('#modal1').modal('show');
+   }
+   else{
+    $('#modal2').modal('show');
+   }
+});
+
+
 
 

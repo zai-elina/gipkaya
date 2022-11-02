@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gramophone</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+        <nav class="menu" id="navbar">
+          <ul>
+            <li class="menu-item">
+              <a href="index.html#about">О сайте</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html#contact">Контакты</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Выйти</a>
+            </li>
+            <li class="menu-item">
+              <a href="registration.html">Регистрация</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="player-nav">
+      <div class="player-menu">
+        <form action="" class="search">
+          <div class="searching">
+            <input
+              type="search"
+              placeholder="Sting"
+              class="search-field"
+            />
+            <button><img src="images/search.png" alt="" class="search-icon" /></button>
+          </div>
+        </form>
+
+        <div class="btn-menu">
+          <a href="#">Моя музыка</a>
+        </div>
+        <div class="btn-menu">
+          <a href="#">Рекомендации</a>
+        </div>
+        <div class="btn-menu">
+          <a href="#">Новинки</a>
+        </div>
+        <div class="btn-menu">
+          <a href="index.html">Главная</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="my-playlists">
+      <div class="container">
+        <form action="" class="create-playlist">
+          <div class="frame-playlists">
+            <div class="playlists-title">Создание нового альбома</div>
+            <hr />
+            <div class="desc-creation-playlist">
+              <label class="label-cover">
+                <i class="cover-icons"
+                  ><img
+                    class="add-playlist"
+                    src="images/my-playlists/image 47.png"
+                    alt=""
+                /></i>
+                <span class="title-cover">Добавить обложку</span>
+                <input type="file" />
+              </label>
+              <div class="text-input">
+                <label for="name-playlist">
+                  <input type="text" placeholder="Название альбома" />
+                </label>
+              </div>
+            </div>
+              <hr>
+              
+              <label class="label-cover albom">
+                <i class="cover-icons"
+                  ><img
+                    class="add-albom"
+                    src="images/image 50.png"
+                    alt=""
+                /></i>
+                <span class="title-albom">Перенесите аудиофайлы</span>
+                <input type="file" />
+              </label>
+            
+          
+          <button type="submit" class="createbtn">
+            <div class="createbtn-text">Создать</div>
+          </button>
+        </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-text">ⒸРазработан ВИБЭР, 2022</div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

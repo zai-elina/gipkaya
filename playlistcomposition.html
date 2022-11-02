@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gramophone</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+        <nav class="menu" id="navbar">
+          <ul>
+            <li class="menu-item">
+              <a href="index.html#about">О сайте</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html#contact">Контакты</a>
+            </li>
+            <li class="menu-item">
+              <a href="login.html">Войти</a>
+            </li>
+            <li class="menu-item">
+              <a href="registration.html">Регистрация</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="player-nav">
+        <div class="player-menu">
+          <form action="" class="search">
+              <div class="searching">
+                <input
+                  type="search"
+                  placeholder="Sting"
+                  class="search-field"
+                />
+                <button><img src="images/search.png" alt="" class="search-icon" /></button>
+              </div>
+            </form>
+  
+          <div class="btn-menu">
+            <a href="#">Моя музыка</a>
+          </div>
+          <div class="btn-menu">
+            <a href="#">Рекомендации</a>
+          </div>
+          <div class="btn-menu">
+            <a href="#">Новинки</a>
+          </div>
+          <div class="btn-menu">
+            <a href="index.html">Главная</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="my-playlists playlist-comp">
+        <div class="container">
+            <div class="frame-playlists">
+                <div class="user-desc">
+                    <div class="avatar">
+                      <img src="images/my-playlists/latte_menu 2.png" alt="" />
+                    </div>
+                    <div class="text-user-desc">
+                      <div class="title-my">ПЛЕЙЛИСТ</div>
+                      <div class="nikname">Любимая музыка</div>
+                      <button class="to-listen"><img src="images/free-icon-play-buttton-5577228 2.png" alt=""> Слушать</button>
+                    </div>
+                  </div>
+                  <hr />
+                  <form action="" class="search">
+                    <div class="searching">
+                      <input
+                        type="search"
+                        placeholder="Название песни"
+                        class="search-field"
+                      />
+                      <button><img src="images/search.png" alt="" class="search-icon" /></button>
+                    </div>
+                  </form>
+
+                  <div class="list-music">
+                    <div class="music-item">
+                        <div class="img">
+                            <img src="images/popular-music/shape.png" alt="" />
+                          </div>
+                          <div class="music-desc1">
+                            <div class="name">Shape of my heart</div>
+                            <div class="musician">Sting</div>
+                          </div>
+                          <div class="music-desc2">
+                            <div class="music-time">4:36</div>
+                          </div>
+                    </div>
+
+                    <div class="music-item">
+                        <div class="img">
+                            <img src="images/popular-music/shape.png" alt="" />
+                          </div>
+                          <div class="music-desc1">
+                            <div class="name">Shape of my heart</div>
+                            <div class="musician">Sting</div>
+                          </div>
+                          <div class="music-desc2">
+                            <div class="music-time">4:36</div>
+                          </div>
+                    </div>
+
+                    <div class="music-item">
+                        <div class="img">
+                            <img src="images/popular-music/shape.png" alt="" />
+                          </div>
+                          <div class="music-desc1">
+                            <div class="name">Shape of my heart</div>
+                            <div class="musician">Sting</div>
+                          </div>
+                          <div class="music-desc2">
+                            <div class="music-time">4:36</div>
+                          </div>
+                    </div>                    
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-text">ⒸРазработан ВИБЭР, 2022</div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/player.js"></script>
+  </body>
+</html>
